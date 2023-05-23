@@ -1,0 +1,74 @@
+body{
+    color: black;
+    font-family: 'Alegreya', serif;
+    font-family: 'Merriweather', serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home {
+    background-image: url(./image/destination/nairobi-image.jpg);
+}
+.login-container {
+    margin: 50px auto;
+    width: 400px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+form {
+    margin-right: 20px;
+    
+}
+
+.error-txt {
+    color: #fdfdfd;
+    font-size: 18px;
+    padding: 10px 12px;
+    text-align: center;
+    border-radius: 5px;
+    background: #032f3d;
+    border: 1px solid var(--white-bg-color);
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: 'Rajdhani', sans-serif;
+    color: #66BFBF;
+    
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #008CBA;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00688B;
+}
+
+a {
+    color: #008CBA;
+    text-decoration: none;
+}

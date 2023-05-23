@@ -1,0 +1,6 @@
+PAYPAL_ID – Specify the email of the PayPal Business account.
+PAYPAL_SANDBOX – Specify whether you use Sandbox environment (TRUE/FALSE).
+PAYPAL_RETURN_URL – Specify the URL where the buyer will be redirected after payment.
+PAYPAL_CANCEL_URL – Specify the URL where the buyer will be redirected after payment cancellation.
+PAYPAL_NOTIFY_URL – Specify the URL where the transaction data will be sent for verification through PayPal IPN.
+PAYPAL_CURRENCY – Specify the currency code.

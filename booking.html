@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="image/logo.jfif">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">    
+      
+  <!-- Our custom CSS -->
+  <link rel="stylesheet" href="css/index.css">
+  <title>Edenland Hotel Reservations</title>
+  <script src="tabs.js" defer></script>
+  
+</head>
+
+<body class="destination" id="main">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex">
+    <div>
+      <img src="image/logo.jfif" alt="Edenland hotels logo" class="logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="home.html"><span aria-hidden="true">00</span>Home</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="destination.html"><span aria-hidden="true">01</span>Destination</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="hotels.html"><span aria-hidden="true">02</span>Hotels</a>
+            <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="booking.html"><span aria-hidden="true">03</span>Bookings</a>
+        </ul>
+    </nav>
+  </header>
+  <!------------->
+
+  <!--Hotel 1---->
+
+  <!------------->
+
+  <div id="main" class="grid-container grid-container--destination flow">
+    <h1 class="numbered-title"><span aria-hidden="true">01</span>Choose your room</h1>
+    
+    <picture id="nairobi-image">
+    <source srcset="image/destination/nairobi-image.jpg" type="image/webp">
+      <img src="image/destination/nairobi-image.jpg" alt="suite">
+    </picture>
+    <picture hidden id="mombasa-image">
+      <source srcset="image/booking/presidential-image.p" type="image/webp">
+      <img src="image/booking/presidential-image.png" alt="presidential">
+    </picture>
+    <picture hidden id="nakuru-image">
+      <source srcset="image/booking/duplex-image.png" type="image/webp">
+      <img src="image/booking/duplex-image.png" alt="duplex">
+    </picture>
+    <picture hidden id="eldoret-image">
+      <source srcset="image/booking/standard-image.png" type="image/webp">
+      <img src="image/booking/standard-image.png" alt="standard">
+    </picture>
+    
+    
+    <div class="tab-list underline-indicators flex" role="tablist" aria-label="destination list">
+        <button aria-selected="true" role="tab" aria-controls="moon-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="0" data-image="nairobi-image">Suite</button>
+        <button aria-selected="false" role="tab" aria-controls="mars-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="mombasa-image">Presidential</button>
+        <button aria-selected="false" role="tab" aria-controls="europa-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="nakuru-image">Duplex</button>
+        <button aria-selected="false" role="tab" aria-controls="titan-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="eldoret-image">Standard</button>
+    </div>
+
+    <!-- Nairobi Town -->
+    <article class="destination-info flow" id="moon-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">suite</h2>
+
+      <p>The suite, in a hitel, typically includes a separate living area and a bedroom. Suites are usually more spacious thatn standard hotel room
+        and may offer additional amenities such as a kitchennet or a Jacuzzi tub. So, if your are a business traveller, or a couple or even a family
+        out onnvacation, the suite would be a perfect choice.
+      </p>
+      
+      <div class="destination-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">price per night</h3>
+          <p class="ff-serif uppercase">$300</p>
+        </div>
+        <div>
+          <a class="book-btn" href="">BOOK</a>
+        </div>
+      </div>
+    </article>
+    
+    <!-- Mars -->
+    <article hidden class="destination-info flow" id="mars-tab" tabindex="0"  role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Presidential</h2>
+
+      <p>
+        The presidential suite is the most luxurious, high-end suite and is typically the most expensive and opulent room in the hotel.
+        This tyoe of suite is usually reserved for VIPs, celebrities, or heads of state, and can include multiple bedrooms,
+        living areas, dining rooms, and other amenities such as a private balcony, a hot tub and swimming pool.
+      </p>
+      
+      <div class="destination-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">price per night</h3>
+          <p class="ff-serif uppercase">$2000</p>
+        </div>
+        <div>
+          <a class="book-btn" href="">BOOK</a>
+        </div>
+      </div>
+    </article>
+    
+    <!-- Nakuru -->
+    <article hidden class="destination-info flow" id="europa-tab" tabindex="0"  role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Duplex</h2>
+
+      <p>
+        A duplex is a two-story suite that features separate living and sleeping areas. This types of room is ideal for families or groups
+        of friends travelling together, as it offers more space and privacy than a standard hotel room. Duplexes often include amenities 
+        such as a kitchennet, a balcony and even a fireplace.
+      </p>
+      <div class="destination-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">price per night</h3>
+          <p class="ff-serif uppercase">$150</p>
+        </div>
+        <div>
+          <a class="book-btn" href="">BOOK</a>
+        </div>
+      </div>
+    </article>
+    
+    <!-- Eldoret -->
+    <article hidden class="destination-info flow" id="titan-tab" tabindex="0"  role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Standard</h2>
+
+      <p>
+        A standard hotel room is a basic, no-frills room that typically includes a bed, a desk, and a bathroom.
+         These rooms are the most affordable option in a hotel and suitbale for tavellers who don't require amenities and extra space.
+         Standard rooms may vary in size and layout depending on the hotel, but they typically accommodate one or two guests at most.
+      </p>
+      
+      <div class="destination-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">price per night</h3>
+          <p class="ff-serif uppercase">$50</p>
+        </div>
+        <div>
+          <a class="book-btn" href="">BOOK</a>
+        </div>
+      </div>
+    </article>
+  </div>
+  <!---------------->
+
+  <!---Hotel 2------->
+
+  <!----------------->
+
+  <div id="main" class="grid-container grid-container--destination flow">
+    <h1 class="numbered-title"><span aria-hidden="true">02</span>Choose your room</h1>
+    
+    <picture id="nairobi-image">
+    <source srcset="image/destination/nairobi-image.jpg" type="image/webp">
+      <img src="image/destination/nairobi-image.jpg" alt="suite">
+    </picture>
+    <picture hidden id="mombasa-image">
+      <source srcset="image/booking/presidential-image.p" type="image/webp">
+      <img src="image/booking/presidential-image.png" alt="presidential">
+    </picture>
+    <picture hidden id="nakuru-image">
+      <source srcset="image/booking/duplex-image.png" type="image/webp">
+      <img src="image/booking/duplex-image.png" alt="duplex">
+    </picture>
+    <picture hidden id="eldoret-image">
+      <source srcset="image/booking/standard-image.png" type="image/webp">
+      <img src="image/booking/standard-image.png" alt="standard">
+    </picture>
+    
+    
+    <div class="tab-list underline-indicators flex" role="tablist" aria-label="destination list">
+        <button aria-selected="true" role="tab" aria-controls="moon-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="0" data-image="nairobi-image">Suite</button>
+        <button aria-selected="false" role="tab" aria-controls="mars-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="mombasa-image">Presidential</button>
+        <button aria-selected="false" role="tab" aria-controls="europa-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="nakuru-image">Duplex</button>
+        <button aria-selected="false" role="tab" aria-controls="titan-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="eldoret-image">Standard</button>
+    </div>
+
+    <!-- Nairobi Town -->
+    <article class="destination-info flow" id="moon-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">suite</h2>
+
+      <p>The suite, in a hitel, typically includes a separate living area and a bedroom. Suites are usually more spacious thatn standard hotel room
+        and may offer additional amenities such as a kitchennet or a Jacuzzi tub. So, if your are a business traveller, or a couple or even a family
+        out onnvacation, the suite would be a perfect choice.
+      </p>
+      
+      <div class="destination-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">price per night</h3>
+          <p class="ff-serif uppercase">$300</p>
+        </div>
+        <div>
+          <a class="book-btn" href="">BOOK</a>
+        </div>
+      </div>
+    </article>
+    
+    <!-- Mars -->
+    <article hidden class="destination-info flow" id="mars-tab" tabindex="0"  role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Presidential Suite</h2>
+
+      <p>
+        The presidential suite is the most luxurious, high-end suite and is typically the most expensive and opulent room in the hotel.
+        This tyoe of suite is usually reserved for VIPs, celebrities, or heads of state, and can include multiple bedrooms,
+        living areas, dining rooms, and other amenities such as a private balcony, a hot tub and swimming pool.
+      </p>
+      
+      <div class="destination-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">price per night</h3>
+          <p class="ff-serif uppercase">$2000</p>
+        </div>
+        <div>
+          <a class="book-btn" href="">BOOK</a>
+        </div>
+      </div>
+    </article>
+    
+    <!-- Nakuru -->
+    <article hidden class="destination-info flow" id="europa-tab" tabindex="0"  role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Duplex</h2>
+
+      <p>
+        A duplex is a two-story suite that features separate living and sleeping areas. This types of room is ideal for families or groups
+        of friends travelling together, as it offers more space and privacy than a standard hotel room. Duplexes often include amenities 
+        such as a kitchennet, a balcony and even a fireplace.
+      </p>
+      <div class="destination-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">price per night</h3>
+          <p class="ff-serif uppercase">$150</p>
+        </div>
+        <div>
+          <a class="book-btn" href="">BOOK</a>
+        </div>
+      </div>
+    </article>
+    
+    <!-- Eldoret -->
+    <article hidden class="destination-info flow" id="titan-tab" tabindex="0"  role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Standard</h2>
+
+      <p>
+        A standard hotel room is a basic, no-frills room that typically includes a bed, a desk, and a bathroom.
+         These rooms are the most affordable option in a hotel and suitbale for tavellers who don't require amenities and extra space.
+         Standard rooms may vary in size and layout depending on the hotel, but they typically accommodate one or two guests at most.
+      </p>
+      
+      <div class="destination-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">price per night</h3>
+          <p class="ff-serif uppercase">$50</p>
+        </div>
+        <div>
+          <a class="book-btn" href="">BOOK</a>
+        </div>
+      </div>
+    </article>
+  </div>
+  <!--------------->
+  
+  <!---Hotel 3------>
+
+  <!--------------->
+
+  <div id="main" class="grid-container grid-container--destination flow">
+    <h1 class="numbered-title"><span aria-hidden="true">03</span> Book your room</h1>
+    
+    <picture id="nairobi-image">
+    <source srcset="image/destination/nairobi-image.jpg" type="image/webp">
+      <img src="image/destination/nairobi-image.jpg" alt="suite">
+    </picture>
+    <picture hidden id="mombasa-image">
+      <source srcset="image/booking/presidential-image.p" type="image/webp">
+      <img src="image/booking/presidential-image.png" alt="presidential">
+    </picture>
+    <picture hidden id="nakuru-image">
+      <source srcset="image/booking/duplex-image.png" type="image/webp">
+      <img src="image/booking/duplex-image.png" alt="duplex">
+    </picture>
+    <picture hidden id="eldoret-image">
+      <source srcset="image/booking/standard-image.png" type="image/webp">
+      <img src="image/booking/standard-image.png" alt="standard">
+    </picture>
+    
+    
+    <div class="tab-list underline-indicators flex" role="tablist" aria-label="destination list">
+        <button aria-selected="true" role="tab" aria-controls="moon-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="0" data-image="nairobi-image">Suite</button>
+        <button aria-selected="false" role="tab" aria-controls="mars-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="mombasa-image">Presidential</button>
+        <button aria-selected="false" role="tab" aria-controls="europa-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="nakuru-image">Duplex</button>
+        <button aria-selected="false" role="tab" aria-controls="titan-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="eldoret-image">Standard</button>
+    </div>
+
+    <!-- Nairobi Town -->
+    <article class="destination-info flow" id="moon-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">suite</h2>
+
+      <p>The suite, in a hitel, typically includes a separate living area and a bedroom. Suites are usually more spacious thatn standard hotel room
+        and may offer additional amenities such as a kitchennet or a Jacuzzi tub. So, if your are a business traveller, or a couple or even a family
+        out onnvacation, the suite would be a perfect choice.
+      </p>
+      
+      <div class="destination-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">price per night</h3>
+          <p class="ff-serif uppercase">$300</p>
+        </div>
+        <div>
+          <a class="book-btn" href="">BOOK</a>
+        </div>
+      </div>
+    </article>
+    
+    <!-- Mars -->
+    <article hidden class="destination-info flow" id="mars-tab" tabindex="0"  role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Presidential Suite</h2>
+
+      <p>
+        The presidential suite is the most luxurious, high-end suite and is typically the most expensive and opulent room in the hotel.
+        This tyoe of suite is usually reserved for VIPs, celebrities, or heads of state, and can include multiple bedrooms,
+        living areas, dining rooms, and other amenities such as a private balcony, a hot tub and swimming pool.
+      </p>
+      
+      <div class="destination-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">price per night</h3>
+          <p class="ff-serif uppercase">$2000</p>
+        </div>
+        <div>
+          <a class="book-btn" href="">BOOK</a>
+        </div>
+      </div>
+    </article>
+    
+    <!-- Nakuru -->
+    <article hidden class="destination-info flow" id="europa-tab" tabindex="0"  role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Duplex</h2>
+
+      <p>
+        A duplex is a two-story suite that features separate living and sleeping areas. This types of room is ideal for families or groups
+        of friends travelling together, as it offers more space and privacy than a standard hotel room. Duplexes often include amenities 
+        such as a kitchennet, a balcony and even a fireplace.
+      </p>
+      <div class="destination-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">price per night</h3>
+          <p class="ff-serif uppercase">$150</p>
+        </div>
+        <div>
+          <a class="book-btn" href="">BOOK</a>
+        </div>
+      </div>
+    </article>
+    
+    <!-- Eldoret -->
+    <article hidden class="destination-info flow" id="titan-tab" tabindex="0"  role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Standard</h2>
+
+      <p>
+        A standard hotel room is a basic, no-frills room that typically includes a bed, a desk, and a bathroom.
+         These rooms are the most affordable option in a hotel and suitbale for tavellers who don't require amenities and extra space.
+         Standard rooms may vary in size and layout depending on the hotel, but they typically accommodate one or two guests at most.
+      </p>
+      
+      <div class="destination-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">price per night</h3>
+          <p class="ff-serif uppercase">$50</p>
+        </div>
+        <div>
+          <a class="book-btn" href="">BOOK</a>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!------------->
+
+  <!----Hotel 4-->
+  
+  <!------------->
+
+  <div id="main" class="grid-container grid-container--destination flow">
+    <h1 class="numbered-title"><span aria-hidden="true">04</span> Choose your room</h1>
+    
+    <picture id="nairobi-image">
+    <source srcset="image/destination/nairobi-image.jpg" type="image/webp">
+      <img src="image/destination/nairobi-image.jpg" alt="suite">
+    </picture>
+    <picture hidden id="mombasa-image">
+      <source srcset="image/booking/presidential-image.p" type="image/webp">
+      <img src="image/booking/presidential-image.png" alt="presidential">
+    </picture>
+    <picture hidden id="nakuru-image">
+      <source srcset="image/booking/duplex-image.png" type="image/webp">
+      <img src="image/booking/duplex-image.png" alt="duplex">
+    </picture>
+    <picture hidden id="eldoret-image">
+      <source srcset="image/booking/standard-image.png" type="image/webp">
+      <img src="image/booking/standard-image.png" alt="standard">
+    </picture>
+    
+    
+    <div class="tab-list underline-indicators flex" role="tablist" aria-label="destination list">
+        <button aria-selected="true" role="tab" aria-controls="moon-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="0" data-image="nairobi-image">Suite</button>
+        <button aria-selected="false" role="tab" aria-controls="mars-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="mombasa-image">Presidential</button>
+        <button aria-selected="false" role="tab" aria-controls="europa-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="nakuru-image">Duplex</button>
+        <button aria-selected="false" role="tab" aria-controls="titan-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="eldoret-image">Standard</button>
+    </div>
+
+    <!-- Nairobi Town -->
+    <article class="destination-info flow" id="moon-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">suite</h2>
+
+      <p>The suite, in a hitel, typically includes a separate living area and a bedroom. Suites are usually more spacious thatn standard hotel room
+        and may offer additional amenities such as a kitchennet or a Jacuzzi tub. So, if your are a business traveller, or a couple or even a family
+        out onnvacation, the suite would be a perfect choice.
+      </p>
+      
+      <div class="destination-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">price per night</h3>
+          <p class="ff-serif uppercase">$300</p>
+        </div>
+        <div>
+          <a class="book-btn" href="">BOOK</a>
+        </div>
+      </div>
+    </article>
+    
+    <!-- Mars -->
+    <article hidden class="destination-info flow" id="mars-tab" tabindex="0"  role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Presidential Suite</h2>
+
+      <p>
+        The presidential suite is the most luxurious, high-end suite and is typically the most expensive and opulent room in the hotel.
+        This tyoe of suite is usually reserved for VIPs, celebrities, or heads of state, and can include multiple bedrooms,
+        living areas, dining rooms, and other amenities such as a private balcony, a hot tub and swimming pool.
+      </p>
+      
+      <div class="destination-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">price per night</h3>
+          <p class="ff-serif uppercase">$2000</p>
+        </div>
+        <div>
+          <a class="book-btn" href="">BOOK</a>
+        </div>
+      </div>
+    </article>
+    
+    <!-- Nakuru -->
+    <article hidden class="destination-info flow" id="europa-tab" tabindex="0"  role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Duplex</h2>
+
+      <p>
+        A duplex is a two-story suite that features separate living and sleeping areas. This types of room is ideal for families or groups
+        of friends travelling together, as it offers more space and privacy than a standard hotel room. Duplexes often include amenities 
+        such as a kitchennet, a balcony and even a fireplace.
+      </p>
+      <div class="destination-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">price per night</h3>
+          <p class="ff-serif uppercase">$150</p>
+        </div>
+        <div>
+          <a class="book-btn" href="">BOOK</a>
+        </div>
+      </div>
+    </article>
+    
+    <!-- Eldoret -->
+    <article hidden class="destination-info flow" id="titan-tab" tabindex="0"  role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Standard</h2>
+
+      <p>
+        A standard hotel room is a basic, no-frills room that typically includes a bed, a desk, and a bathroom.
+         These rooms are the most affordable option in a hotel and suitbale for tavellers who don't require amenities and extra space.
+         Standard rooms may vary in size and layout depending on the hotel, but they typically accommodate one or two guests at most.
+      </p>
+      
+      <div class="destination-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">price per night</h3>
+          <p class="ff-serif uppercase">$50</p>
+        </div>
+        <div>
+          <a class="book-btn" href="">BOOK</a>
+        </div>
+      </div>
+    </article>
+  </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+                <div class="footer-col">
+                  <h4>About us</h4>
+  <span>We are an upcoming hotel booking service that aims to fully satisfy our customers.
+    You can get in touch with us through any of the social media platforms below.</span>
+                 <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+          <div class="footer-col">
+            <h4>Menu Link</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">Location</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">travelling</a></li>
+              <li><a href="#">refunds</a></li>
+              <li><a href="#">order status</a></li>
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Booking</a></li>
+              <li><a href="#">Reservations</a></li>
+              <li><a href="#">Inquiries</a></li>
+              <li><a href="#">travelling</a></li>
+            </ul>
+          </div>
+  
+        </div>
+  <div class="copy-right">
+       <span class="text-1"><a href="">Gedion Kiprotich</a> © Copyright 2023</span>
+       <span class="text-2"> All Rights Reserved </span>
+  </div>
+      </div>
+     </footer>
+
+<script>
+const nav = document.querySelector(".primary-navigation");
+const navToggle = document.querySelector(".mobile-nav-toggle");
+
+navToggle.addEventListener("click", () => {
+    
+    const visiblity = nav.getAttribute("data-visible");
+    if (visiblity === "false") {
+        nav.setAttribute("data-visible", true);
+        navToggle.setAttribute("aria-expanded", true);
+    } else {
+        nav.setAttribute("data-visible", false);
+        navToggle.setAttribute("aria-expanded", false);
+    }
+})
+</script>
+
+</body>
+</html>

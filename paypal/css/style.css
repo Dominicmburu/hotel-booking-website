@@ -1,0 +1,90 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.container .card {
+    flex: 0 0 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.container img {
+    width: 100%;
+    height: 131px;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.container .body {
+    padding-bottom: 10px;
+}
+
+.container h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #566270;
+}
+
+.container h6 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #566270;
+}
+
+.status {
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 50px 0;
+}
+
+.status .success {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.status .error {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+}
+
+.container .main {
+    width: 100%;
+}
+
+.status h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #0077ff;
+}
+
+.main p {
+    font-size: 16px;
+    color: #4b4b4b;
+}
+
+.btn-link {
+    padding: 10px 15px;
+    color: #0077ff;
+    border: 1px solid #0077ff;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
